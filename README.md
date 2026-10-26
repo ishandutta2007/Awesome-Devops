@@ -8,7 +8,7 @@
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
 <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Devops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Devops?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Devops/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Devops?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Devops/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Devops?style=flat-square&color=blue" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Devops/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Devops/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Devops?style=flat-square&color=red" alt="Open Issues" /></a>
@@ -30,7 +30,7 @@
 
 **Awesome DevOps** provides developers, Site Reliability Engineers (SREs), DevOps architects, platform engineers, and engineering managers with an authoritative index of industry-leading **DevOps tools**, **CI/CD platforms**, **Infrastructure as Code (IaC)** engines, and **cloud-native observability stacks**. 
 
-Whether designing multi-tenant enterprise deployment pipelines, automating GitOps rollouts on Kubernetes clusters, or provisioning hybrid cloud infrastructure, choosing the right toolchain requires clear insights into total cost of ownership. This curated benchmark breaks down **enterprise SaaS unit pricing**, **exact free tier thresholds & trial quotas**, and **company scale (valuation/revenue)**, alongside battle-tested, **community-ranked open-source alternatives** sorted by real-time GitHub stars.
+Whether designing multi-tenant enterprise deployment pipelines, automating GitOps rollouts on Kubernetes clusters, or provisioning hybrid cloud infrastructure, choosing the right toolchain requires clear insights into total cost of ownership. This curated benchmark breaks down **enterprise SaaS unit pricing**, **exact free tier thresholds & trial quotas**, and **company scale (valuation/revenue)**, alongside battle-tested, **community-ranked open-source alternatives** sorted by real-time GitHub_Stars.
 
 ---
 
@@ -58,9 +58,9 @@ The following enterprise SaaS platforms provide developer platforms, continuous 
 
 ## ⚡ Ranked Open-Source DevOps Tools
 
-The following production-grade open-source DevOps projects, cloud-native engines, and CI/CD tools are **strictly sorted by GitHub Stargazers in descending order**. Click on any star badge to view real-time repository stargazer metrics.
+The following production-grade open-source DevOps projects, cloud-native engines, and CI/CD tools are **strictly sorted by GitHub Stargazers in descending order**. Click on any Stars_Badge to view real-time repository stargazer metrics.
 
-| Project | Stars | Primary Category | Description |
+| Project | GitHub_Stars | Primary Category | Description |
 | :--- | :--- | :--- | :--- |
 | [**Kubernetes**](https://github.com/kubernetes/kubernetes) | <a href="https://github.com/kubernetes/kubernetes/stargazers"><img src="https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white" alt="Kubernetes Stars" /></a> | Container Orchestration (Go) | Production-grade container scheduling and orchestration platform automating deployment, scaling, and operational management of containerized applications across compute clusters. |
 | [**Grafana**](https://github.com/grafana/grafana) | <a href="https://github.com/grafana/grafana/stargazers"><img src="https://img.shields.io/github/stars/grafana/grafana?style=social&color=white" alt="Grafana Stars" /></a> | Observability & Visualization (TypeScript / Go) | The open and composable observability and interactive data visualization platform. Connects to Prometheus, Loki, Elasticsearch, InfluxDB, PostgreSQL, and cloud backends. |
@@ -86,7 +86,7 @@ Contributions are warmly welcomed! 💖
 
 1. 🍴 **Fork** the repository.
 2. 🌿 **Create** a descriptive feature branch (`git checkout -b feature/add-devops-platform`).
-3. 📝 **Add** your entry with specific starting tier pricing and verified free tier limits (for SaaS) or GitHub star count badges (for Open Source).
+3. 📝 **Add** your entry with specific starting tier pricing and verified free tier limits (for SaaS) or GitHub Stars_Count badges (for Open Source).
 4. ✅ **Ensure** proper formatting, chronological star sorting, and markdown link integrity.
 5. 🚀 **Submit** a pull request!
 
