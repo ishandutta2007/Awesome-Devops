@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#050814" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="35%" stop-color="#6366f1" />
+      <stop offset="70%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Subtle Tech Grid -->
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6" />
+      <circle cx="40" cy="40" r="1.5" fill="#334155" opacity="0.8" />
+    </pattern>
+
+    <!-- Glowing Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .glow-circle {
+      animation: pulseGlow 7s ease-in-out infinite alternate;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashFlow 24s linear infinite;
+    }
+    .flow-line-reverse {
+      stroke-dasharray: 6 8;
+      animation: dashFlowRev 20s linear infinite;
+    }
+    .data-dot {
+      animation: blinkDot 3s ease-in-out infinite;
+    }
+    .orbit-node {
+      animation: floatNode 6s ease-in-out infinite alternate;
+    }
+    @keyframes pulseGlow {
+      0% { transform: scale(1) translate(0px, 0px); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(25px, -15px); opacity: 0.65; }
+      100% { transform: scale(0.92) translate(-20px, 12px); opacity: 0.35; }
+    }
+    @keyframes dashFlow {
+      to { stroke-dashoffset: -280; }
+    }
+    @keyframes dashFlowRev {
+      to { stroke-dashoffset: 280; }
+    }
+    @keyframes blinkDot {
+      0%, 100% { opacity: 0.3; transform: scale(0.85); }
+      50% { opacity: 1; transform: scale(1.2); }
+    }
+    @keyframes floatNode {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+      100% { transform: translateY(0px); }
+    }
+  </style>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Animated Ambient Orbs (Background layer) -->
+  <g>
+    <circle class="glow-circle" cx="180" cy="110" r="170" fill="url(#glowGrad1)" filter="url(#softGlow)" />
+    <circle class="glow-circle" cx="1040" cy="270" r="190" fill="url(#glowGrad2)" filter="url(#softGlow)" style="animation-delay: -3.5s;" />
+    <circle class="glow-circle" cx="600" cy="380" r="140" fill="url(#glowGrad3)" filter="url(#softGlow)" style="animation-delay: -1.8s;" />
+  </g>
+
+  <!-- Technical Grid Overlay -->
+  <rect width="1200" height="420" rx="16" fill="url(#gridPattern)" />
+
+  <!-- Background Dynamic Pipeline & CI/CD Flow Streams -->
+  <g opacity="0.45">
+    <!-- Infinity / Pipeline Wave Top -->
+    <path class="flow-line" d="M 60 120 C 240 70, 420 160, 600 110 S 960 60, 1140 120" fill="none" stroke="#38bdf8" stroke-width="2.5" />
+    <!-- Wave Bottom -->
+    <path class="flow-line-reverse" d="M 60 320 C 260 360, 460 280, 660 330 S 980 370, 1140 310" fill="none" stroke="#8b5cf6" stroke-width="2.2" />
+    <!-- Connector Branch -->
+    <path class="flow-line" d="M 120 200 C 350 250, 850 170, 1080 220" fill="none" stroke="#ec4899" stroke-width="1.8" opacity="0.7" />
+  </g>
+
+  <!-- Ambient Architecture Decorative Chips (Left & Right Flanks) -->
+  <g class="orbit-node" opacity="0.9">
+    <!-- Left Flank Chip: CI/CD -->
+    <rect x="70" y="52" width="160" height="34" rx="17" fill="#1e293b" stroke="#38bdf8" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="88" cy="69" r="5" fill="#38bdf8" class="data-dot" />
+    <text x="103" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">⚡ CI/CD Pipelines</text>
+
+    <!-- Left Flank Chip: GitOps -->
+    <rect x="70" y="335" width="165" height="34" rx="17" fill="#1e293b" stroke="#06b6d4" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="88" cy="352" r="5" fill="#06b6d4" class="data-dot" style="animation-delay: -1s;" />
+    <text x="103" y="357" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">🐙 GitOps &amp; Delivery</text>
+
+    <!-- Right Flank Chip: Cloud Native -->
+    <rect x="965" y="52" width="165" height="34" rx="17" fill="#1e293b" stroke="#a855f7" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="983" cy="69" r="5" fill="#a855f7" class="data-dot" style="animation-delay: -1.5s;" />
+    <text x="997" y="74" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">☁️ Cloud Native</text>
+
+    <!-- Right Flank Chip: Observability -->
+    <rect x="960" y="335" width="170" height="34" rx="17" fill="#1e293b" stroke="#ec4899" stroke-opacity="0.4" stroke-width="1.2" />
+    <circle cx="978" cy="352" r="5" fill="#ec4899" class="data-dot" style="animation-delay: -2s;" />
+    <text x="992" y="357" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600">📊 Observability</text>
+  </g>
+
+  <!-- Foreground Header Content (Guaranteed Unobscured and Centered) -->
+  <g text-anchor="middle">
+    <!-- Category Pill -->
+    <rect x="475" y="54" width="250" height="32" rx="16" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" />
+    <text x="600" y="75" fill="#a5b4fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">⚡ CURATED DEVOPS ECOSYSTEM ⚡</text>
+
+    <!-- Main Title -->
+    <text x="600" y="160" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="900" letter-spacing="-1">
+      Awesome DevOps 🚀
+    </text>
+
+    <!-- Subtitle with Gradient Accent -->
+    <text x="600" y="212" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="0.3">
+      CI/CD Platforms • Infrastructure as Code • GitOps • Cloud-Native Observability
+    </text>
+
+    <!-- Tagline / Description -->
+    <text x="600" y="254" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="400">
+      Enterprise SaaS benchmarks, verified transparent starting tier pricing, free tier limits &amp; ranked open-source engines
+    </text>
+
+    <!-- Key Ecosystem Badges (Pills) -->
+    <g transform="translate(600, 312)">
+      <!-- Pill 1: Enterprise SaaS -->
+      <g transform="translate(-290, 0)">
+        <rect x="-95" y="-18" width="190" height="36" rx="18" fill="#131d31" stroke="#38bdf8" stroke-width="1.2" />
+        <text x="0" y="5" fill="#7dd3fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">🏢 Enterprise SaaS</text>
+      </g>
+
+      <!-- Pill 2: Open Source -->
+      <g transform="translate(0, 0)">
+        <rect x="-95" y="-18" width="190" height="36" rx="18" fill="#131d31" stroke="#8b5cf6" stroke-width="1.2" />
+        <text x="0" y="5" fill="#d8b4fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">⭐ Open-Source Tools</text>
+      </g>
+
+      <!-- Pill 3: Unit Economics -->
+      <g transform="translate(290, 0)">
+        <rect x="-95" y="-18" width="190" height="36" rx="18" fill="#131d31" stroke="#10b981" stroke-width="1.2" />
+        <text x="0" y="5" fill="#6ee7b7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600">💰 Verified Pricing</text>
+      </g>
+    </g>
+
+    <!-- Decorative Bottom Accent Bar -->
+    <rect x="420" y="380" width="360" height="4" rx="2" fill="url(#accentGrad)" />
+  </g>
+</svg>
