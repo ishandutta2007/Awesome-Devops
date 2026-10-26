@@ -86,7 +86,7 @@ Contributions are warmly welcomed! 💖
 
 1. 🍴 **Fork** the repository.
 2. 🌿 **Create** a descriptive feature branch (`git checkout -b feature/add-devops-platform`).
-3. 📝 **Add** your entry with specific starting tier pricing and verified free tier limits (for SaaS) or GitHub Stars_Count badges (for Open Source).
+3. 📝 **Add** your entry with specific starting tier pricing and verified free tier limits (for SaaS) or GitHub_Stars_Count badges (for Open Source).
 4. ✅ **Ensure** proper formatting, chronological star sorting, and markdown link integrity.
 5. 🚀 **Submit** a pull request!
 
