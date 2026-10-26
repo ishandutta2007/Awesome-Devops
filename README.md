@@ -109,9 +109,8 @@ If you find this repository valuable for your DevOps architectures, infrastructu
 
 ---
 
-## 📈 Star History
-
-[![Star History Chart](https://star-history.deta.page/svg?repos=ishandutta2007/Awesome-Devops&type=date&legend=top-left)](https://star-history.deta.page/#ishandutta2007/Awesome-Devops&type=date&legend=top-left)
+##  Star History
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Devops&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Devops&type=date&legend=top-left)
 
 ---
 
